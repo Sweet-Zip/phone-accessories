@@ -22,7 +22,7 @@ const Categories = () => {
                 <h1 className='text-white text-2xl font-semibold mb-4'>Categories</h1>
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
                     {products.map((product) => (
-                        <Link to={`/product?category=${encodeURIComponent(product.name)}`} >
+                        <Link to={`/phone-accessories/product?category=${encodeURIComponent(product.name)}`} >
                             <div key={product.id} className="bg-gray-200 rounded-lg overflow-hidden product-card">
                                 <div className="relative" style={{ paddingBottom: '100%', overflow: 'hidden' }}>
                                     <img src={product.image} alt={product.name} className="absolute inset-0 w-full h-full object-cover" />

@@ -40,14 +40,14 @@ const Navbar = () => {
                 <ul className='hidden md:flex'>
 
                     <li className='p-4 text-hover text-lg'>
-                        <Link to='/home' >Home</Link>
+                        <Link to='/phone-accessories/home' >Home</Link>
                     </li>
                     <li
                         className='p-4 text-lg'
                         onMouseEnter={() => handleMouseEnter('Categories')}
                         onMouseLeave={handleMouseLeave}
                     >
-                        <Link to="/categories" className='block'>
+                        <Link to="/phone-accessories/categories" className='block'>
                             Categories
                         </Link>
                         {hovered && selectedItem === 'Categories' && (
@@ -70,7 +70,7 @@ const Navbar = () => {
                         onMouseEnter={() => handleMouseEnter('Brands')}
                         onMouseLeave={handleMouseLeave}
                     >
-                        <Link to="/brands" className='block'>
+                        <Link to="/phone-accessories/brands" className='block'>
                             Brands
                         </Link>
                         {hovered && selectedItem === 'Brands' && (
@@ -84,10 +84,10 @@ const Navbar = () => {
                         )}
                     </li>
                     <li className='p-4 text-hover text-lg'>
-                        <Link to='/contact'>Contact</Link>
+                        <Link to='/phone-accessories/contact'>Contact</Link>
                     </li>
                     <li className='p-4 text-hover text-lg'>
-                        <Link to='/about'>About</Link>
+                        <Link to='/phone-accessories/about'>About</Link>
                     </li>
                 </ul>
                 <SearchAppBar />
@@ -100,15 +100,15 @@ const Navbar = () => {
                     <SearchAppBar />
                     <ul className='pt-4 uppercase px-4'>
                         <li className='p-4'>
-                            <Link to='/home'>Home</Link>
+                            <Link to='/phone-accessories/home'>Home</Link>
                         </li>
                         <li className='p-4'>Products</li>
                         <li className='p-4'>Category</li>
                         <li className='p-4'>
-                            <Link to='/contact'>Contact</Link>
+                            <Link to='/phone-accessories/contact'>Contact</Link>
                         </li>
                         <li className='p-4'>
-                            <Link to='/about'>About</Link>
+                            <Link to='/phone-accessories/about'>About</Link>
                         </li>
                     </ul>
                 </div>

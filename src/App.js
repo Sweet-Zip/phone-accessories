@@ -11,13 +11,13 @@ const App = () => {
   return (
     <Routes>
       {/* Default route */}
-      <Route path="/" element={<Home />} />
-      <Route path="/home" element={<Home />} />
-      <Route path="/categories" element={<Categories />} />
-      <Route path="/product" element={<ProductItems />} />
-      <Route path="/brands" element={<Brands />} />
-      <Route path="/Contact" element={<Contact />} />
-      <Route path="/About" element={<About />} />
+      <Route path="/phone-accessories" element={<Home />} />
+      <Route path="/phone-accessories/home" element={<Home />} />
+      <Route path="/phone-accessories/categories" element={<Categories />} />
+      <Route path="/phone-accessories/product" element={<ProductItems />} />
+      <Route path="/phone-accessories/brands" element={<Brands />} />
+      <Route path="/phone-accessories/Contact" element={<Contact />} />
+      <Route path="/phone-accessories/About" element={<About />} />
     </Routes>
   );
 };
