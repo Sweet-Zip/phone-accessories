@@ -1,0 +1,22 @@
+.product-card {
+    transition: transform 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.product-card:hover {
+    transform: scale(1.07);
+    z-index: 99;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+}
+
+.text-hover {
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.text-hover:hover {
+    transform: scale(1.10);
+    z-index: 99;
+    font-weight: bold;
+}
