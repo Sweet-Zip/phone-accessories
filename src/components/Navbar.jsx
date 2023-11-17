@@ -33,7 +33,7 @@ const Navbar = () => {
     return (
         <div>
             <div className='text-white flex justify-between items-center h-24 max-w-[1280px] mx-auto px-4'>
-                <Link to='/home'>
+                <Link to='/phone-accessories/home'>
                     <img src={logo} alt="Logo" className='w-fit h-12' />
                 </Link>
 
@@ -55,7 +55,7 @@ const Navbar = () => {
                                 {productsMenuItems.map((item) => (
                                     <Link
                                         key={item}
-                                        to={`/product?category=${encodeURIComponent(item)}`}
+                                        to={`/phone-accessories/product?category=${encodeURIComponent(item)}`}
                                         className='block p-2 text-hover'
                                         onClick={() => setSelectedItem(item)}
                                     >
@@ -102,8 +102,12 @@ const Navbar = () => {
                         <li className='p-4'>
                             <Link to='/phone-accessories/home'>Home</Link>
                         </li>
-                        <li className='p-4'>Products</li>
-                        <li className='p-4'>Category</li>
+                        <li className='p-4'>
+                            <Link to='/phone-accessories/categories'>Categories</Link>
+                        </li>
+                        <li className='p-4'>
+                        <Link to='/phone-accessories/brands'>Brands</Link>
+                        </li>
                         <li className='p-4'>
                             <Link to='/phone-accessories/contact'>Contact</Link>
                         </li>

@@ -58,7 +58,7 @@ const Brands = () => {
             </Dropdown>
           </div>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:gap-5 lg:gap-5 gap-2">
           {products.map((product) => (
             <div key={product.id} className="bg-gray-200 rounded-lg overflow-hidden product-card">
               <div className="relative" style={{ paddingBottom: '100%', overflow: 'hidden' }}>

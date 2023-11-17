@@ -20,7 +20,7 @@ const Categories = () => {
             <Navbar />
             <main className="container mx-auto p-4">
                 <h1 className='text-white text-2xl font-semibold mb-4'>Categories</h1>
-                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:gap-5 lg:gap-5 gap-2">
                     {products.map((product) => (
                         <Link to={`/phone-accessories/product?category=${encodeURIComponent(product.name)}`} >
                             <div key={product.id} className="bg-gray-200 rounded-lg overflow-hidden product-card">
