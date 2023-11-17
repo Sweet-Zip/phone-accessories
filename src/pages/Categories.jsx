@@ -7,11 +7,11 @@ const Categories = () => {
     // Sample product data
     const products = [
         { id: 1, name: 'Adaptor Charger', image: 'https://media.takealot.com/covers_images/7998480cd57341c3adf4d405fca63a2a/s-pdpxl.file' },
-        { id: 1, name: 'Power Bank', image: 'https://m.media-amazon.com/images/I/61p0l35DX-L._AC_SL1500_.jpg' },
-        { id: 1, name: 'USB Charger', image: 'https://qph.cf2.quoracdn.net/main-qimg-b0b56b65d3166119dd14b3c0accd6d34' },
-        { id: 2, name: 'Speaker', image: 'https://www.dcutec.com/2818-large_default/power-bank-4-usb-outputs-power-delivery-20w-quick-charge-225w-30000mah.jpg' },
-        { id: 2, name: 'Ear Phone', image: 'https://m.media-amazon.com/images/I/71A9g778HsL.jpg' },
-        { id: 2, name: 'Product 2', image: 'https://www.dcutec.com/2818-large_default/power-bank-4-usb-outputs-power-delivery-20w-quick-charge-225w-30000mah.jpg' },
+        { id: 2, name: 'Power Bank', image: 'https://m.media-amazon.com/images/I/61p0l35DX-L._AC_SL1500_.jpg' },
+        { id: 3, name: 'USB Charger', image: 'https://qph.cf2.quoracdn.net/main-qimg-b0b56b65d3166119dd14b3c0accd6d34' },
+        { id: 4, name: 'Speaker', image: 'https://i5.walmartimages.com/seo/Sony-SRSXB33-Black-Wireless-Waterproof-Portable-Bluetooth-Speaker-with-Extra-Bass-2020_28818b96-e23b-4b33-8b9f-836a8dacff15_2.56b7107debdad4f22e6aaafddcda877c.jpeg' },
+        { id: 5, name: 'Ear Phone', image: 'https://m.media-amazon.com/images/I/71A9g778HsL.jpg' },
+        { id: 6, name: 'Watch', image: 'https://www.ione.com.kh/wp-content/uploads/2022/09/1-16.jpg' },
         // Add more product items as needed
     ];
 

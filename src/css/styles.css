@@ -17,6 +17,83 @@
 
 .text-hover:hover {
     transform: scale(1.10);
-    z-index: 99;
+    z-index: 999;
     font-weight: bold;
+}
+
+.product-list-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+    /* Ensures z-index works */
+}
+
+.product-list {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+/* Hide scrollbar */
+.product-list::-webkit-scrollbar {
+    display: none;
+}
+
+.scroll-button-left,
+.scroll-button-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    cursor: pointer;
+    z-index: 100;
+    border-radius: 10rem;
+    padding: 0.15rem;
+    /* Set z-index to place behind the cards */
+}
+
+.scroll-button-left {
+    left: 10px;
+    /* Adjust the position as needed */
+}
+
+.scroll-button-right {
+    right: 10px;
+    /* Adjust the position as needed */
+}
+
+.image-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.overlay-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #000;
+    border: none;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.image-wrapper:hover .overlay-button {
+    opacity: 1;
+}
+
+.truncate-text {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
